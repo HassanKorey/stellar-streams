@@ -4,7 +4,9 @@ export {
   Alert,
   Button,
   Card,
+  Dialog,
   Input,
+  Modal,
   ProgressBar,
   Skeleton,
   StatusBadge,
@@ -19,6 +21,7 @@ export type {
   ButtonProps,
   CardProps,
   InputProps,
+  ModalProps,
   ProgressBarProps,
   SkeletonProps,
   SkeletonRounded,
@@ -29,6 +32,16 @@ export type {
   TabsProps,
   TabsTriggerProps,
 } from './primitives';
+export { ToastProvider, useToast } from './toast';
+export type {
+  ToastContextValue,
+  ToastOptions,
+  ToastProviderProps,
+  ToastRecord,
+  ToastVariant,
+} from './toast';
+export { DataTable } from './DataTable';
+export type { DataTableColumn, DataTableProps, DataTableSort, SortDirection } from './DataTable';
 export { Header } from './components/Header';
 export { Footer } from './components/Footer';
 export { Logo } from './components/Logo';
